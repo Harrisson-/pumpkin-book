@@ -8,6 +8,7 @@ export default defineConfig({
     vuePlugin({ appFile: 'App.vue' }),
     clientPlugin(),
     defaultThemePlugin(),
+    pumpkin
   ],
   site: {
     title: 'pumpkin-book',

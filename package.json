@@ -9,6 +9,7 @@
     "vitebook:preview": "vitebook preview"
   },
   "dependencies": {
+    "pumpkin-vue": "file:../pumpkin",
     "vue": "^3.0.0"
   },
   "devDependencies": {
