@@ -1,25 +1,22 @@
 {
-  "name": "",
-  "description": "",
-  "version": "0.0.0",
-  "type": "module",
+  "name": "pumpkin-book",
+  "description": "book for pumpkin",
+  "version": "0.0.1",
   "scripts": {
-    "vitebook:dev": "vitebook dev",
-    "vitebook:build": "vitebook build",
-    "vitebook:preview": "vitebook preview"
+    "story:dev": "histoire dev",
+    "story:build": "histoire build",
+    "story:preview": "histoire preview"
   },
   "dependencies": {
-    "pumpkin-vue": "file:../pumpkin",
+    "pumpkin-vue": "file:../pumpkin/dist/",
     "vue": "^3.0.0"
   },
   "devDependencies": {
-    "@vitebook/client": "^0.100.5",
-    "@vitebook/core": "^0.100.5",
-    "@vitebook/theme-default": "^0.100.5",
-    "@vitebook/vue": "^0.100.5",
-    "@vitejs/plugin-vue": "^3.0.0",
-    "@vue/compiler-sfc": "^3.2.26",
-    "svelte": "^3.49.0",
+    "@histoire/plugin-vue": "^0.11.0",
+    "@vitejs/plugin-vue": "^3.0.1",
+    "autoprefixer": "^10.4.7",
+    "histoire": "^0.11.0",
+    "tailwindcss": "^3.0.24",
     "vite": "^3.0.0"
   }
 }

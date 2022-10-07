@@ -1,0 +1,58 @@
+<script setup>
+import { pumpkinCrumb } from '../node_modules/pumpkin-vue/pumpkin.js'
+
+const crumbs = [
+  {
+    name: "home",
+    link: "https://www.inrap.fr/",
+  },
+  {
+    name: "actualité",
+    link: "https://www.inrap.fr/actualites/recherche",
+  },
+  {
+    name: "fouilles",
+    link: "https://www.inrap.fr/chroniques-de-site/recherche",
+  },
+];
+
+const longCrumbs = [
+  {
+    name: "home",
+    link: "#",
+  },
+  {
+    name: "actualité",
+    link: "#",
+  },
+  {
+    name: "tata",
+    link: "#",
+  },
+  {
+    name: "toto",
+    link: "#",
+  },
+  {
+    name: "titi",
+    link: "#",
+  },
+  {
+    name: "fouilles",
+    link: "#",
+  },
+];
+</script>
+
+<template>
+  <Story title="breadCrumb">
+    <Variant>
+      <pumpkinCrumb :crumbs="longCrumbs" :shrink="true">
+      </pumpkinCrumb>
+    </Variant>
+    <Variant>
+      <pumpkinCrumb :crumbs="crumbs">
+      </pumpkinCrumb>
+    </Variant>
+  </Story>
+</template>
