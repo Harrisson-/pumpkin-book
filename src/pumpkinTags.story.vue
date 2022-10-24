@@ -1,7 +1,7 @@
 <script setup>
 import { reactive } from "vue";
 
-import { pumpkinTags } from "../node_modules/pumpkin-vue/pumpkin.js";
+import { pumpkinTags } from "../node_modules/pumpkin-vue/index.js";
 
 const taglist = [
   "liver",
@@ -49,12 +49,11 @@ function searchHashtag(searchText) {
 </script>
 
 <template>
-	<Story title="Tags">
-		<Variant>
-			<pumpkinTags :given-tags="filteredTags.value" @search-word="searchHashtag" />
-		</Variant>
-	</Story>
+  <Story title="Tags">
+    <Variant title="Standard">
+      <pumpkinTags :given-tags="filteredTags.value" @search-word="searchHashtag" />
+    </Variant>
+  </Story>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

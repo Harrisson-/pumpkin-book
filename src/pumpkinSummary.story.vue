@@ -1,11 +1,11 @@
 <script setup>
-import { pumpkinSummary } from "../node_modules/pumpkin-vue/pumpkin.js";
+import { pumpkinSummary } from "../node_modules/pumpkin-vue/index.js";
 const sections = ["section1", "section2", "section3", "section4"];
 </script>
 
 <template>
 	<Story title="Summary">
-		<Variant>
+		<Variant title="standard">
 			<main>
 				<div class="left-block">
 					<pumpkinSummary :headers="sections"></pumpkinSummary>

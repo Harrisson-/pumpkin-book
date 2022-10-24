@@ -1,6 +1,6 @@
 <script setup>
 import { reactive } from "vue";
-import { pumpkinBanner } from '../node_modules/pumpkin-vue/pumpkin.js'
+import { pumpkinBanner } from '../node_modules/pumpkin-vue/index.js'
 
 const bannerState = reactive({ open: false });
 function openBanner() {
@@ -14,7 +14,7 @@ function closeBanner(modalOpen) {
 
 <template>
   <Story title="banner">
-    <Variant>
+    <Variant title="Standard">
       <button @click="openBanner">pumpkin banner</button>
       <pumpkinBanner
         :content="'toto'"

@@ -1,5 +1,5 @@
 <script setup>
-import { pumpkinCrumb } from '../node_modules/pumpkin-vue/pumpkin.js'
+import { pumpkinCrumb } from '../node_modules/pumpkin-vue/index.js'
 
 const crumbs = [
   {
@@ -46,11 +46,11 @@ const longCrumbs = [
 
 <template>
   <Story title="breadCrumb">
-    <Variant>
+    <Variant title="Long list">
       <pumpkinCrumb :crumbs="longCrumbs" :shrink="true">
       </pumpkinCrumb>
     </Variant>
-    <Variant>
+    <Variant title="Short list">
       <pumpkinCrumb :crumbs="crumbs">
       </pumpkinCrumb>
     </Variant>

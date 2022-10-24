@@ -1,5 +1,5 @@
 <script setup>
-import { pumpkinIntersectionSolo } from '../node_modules/pumpkin-vue/pumpkin.js'
+import { pumpkinIntersectionSolo } from '../node_modules/pumpkin-vue/index.js'
 
 const list = [
   { name: "liver" },
@@ -39,7 +39,7 @@ const list = [
 
 <template>
   <Story title="intersetion solo">
-    <Variant>
+    <Variant title="Standard">
       <div class="solo-wrapper">
         <intersectionSolo
           target="item-solo"
