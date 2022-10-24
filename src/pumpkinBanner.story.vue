@@ -22,5 +22,16 @@ function closeBanner(modalOpen) {
         :show-banner="bannerState.open"
       ></pumpkinBanner>
     </Variant>
+    <Variant title="custom Slot">
+      <button @click="openBanner">pumpkin banner</button>
+      <pumpkinBanner
+        @close-banner="closeBanner"
+        :show-banner="bannerState.open"
+      >
+        <template #content>
+          <p>try to use slot for banner</p>
+        </template>
+      </pumpkinBanner>
+    </Variant>
   </Story>
 </template>
