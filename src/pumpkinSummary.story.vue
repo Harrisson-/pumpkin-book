@@ -1,5 +1,5 @@
 <script setup>
-import { pumpkinSummary } from "../node_modules/pumpkin-vue/index.js";
+import { pumpkinSummary } from 'pumpkin-vue';
 const sections = ["section1", "section2", "section3", "section4"];
 </script>
 

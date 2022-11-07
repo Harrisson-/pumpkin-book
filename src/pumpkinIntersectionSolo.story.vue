@@ -1,5 +1,5 @@
 <script setup>
-import { pumpkinIntersectionSolo } from '../node_modules/pumpkin-vue/index.js'
+import { pumpkinIntersectionSolo } from 'pumpkin-vue'
 
 const list = [
   { name: "liver" },

@@ -8,7 +8,7 @@
     "story:preview": "histoire preview"
   },
   "dependencies": {
-    "pumpkin-vue": "file:../pumpkin/index.js",
+    "pumpkin-vue": "file:../pumpkin",
     "vue": "^3.0.0"
   },
   "devDependencies": {

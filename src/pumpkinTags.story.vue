@@ -1,7 +1,7 @@
 <script setup>
 import { reactive } from "vue";
 
-import { pumpkinTags } from "../node_modules/pumpkin-vue/index.js";
+import { pumpkinTags } from 'pumpkin-vue';
 
 const taglist = [
   "liver",

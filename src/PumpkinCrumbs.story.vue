@@ -1,5 +1,5 @@
 <script setup>
-import { pumpkinCrumb } from '../node_modules/pumpkin-vue/index.js'
+import { pumpkinCrumb } from 'pumpkin-vue';
 
 const crumbs = [
   {

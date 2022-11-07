@@ -1,6 +1,6 @@
 <script setup>
 import { reactive } from "vue";
-import { pumpkinModal } from '../node_modules/pumpkin-vue/index.js'
+import { pumpkinModal } from 'pumpkin-vue'
 
 const modalState = reactive({ open: false });
 modalState.content =
@@ -19,13 +19,13 @@ function closeModal(modalOpen) {
   <Story title="Modal">
     <Variant title="Standard">
       <button @click="openModal">pumpkin modal</button>
-      <modal
+      <pumpkinModal
         :show-modal="modalState.open"
         @close-modal="closeModal"
         :overlay="true"
         :content-title="modalState.title"
         :content-body="modalState.content"
-      ></modal>
+      ></pumpkinModal>
     </Variant>
   </Story>
 </template>
