@@ -1,6 +1,6 @@
 <script setup>
 import { reactive } from "vue";
-import { pumpkinBanner } from 'pumpkin-vue'
+import { pumpkinBanner } from 'pumpkin-vue';
 
 const bannerState = reactive({ open: false });
 function openBanner() {
