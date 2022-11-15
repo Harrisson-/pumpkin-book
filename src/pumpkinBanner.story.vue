@@ -1,6 +1,7 @@
 <script setup>
+import { logEvent } from "histoire/client";
 import { reactive } from "vue";
-import { pumpkinBanner } from 'pumpkin-vue';
+import { pumpkinBanner } from "pumpkin-vue";
 
 const bannerState = reactive({ open: false });
 function openBanner() {
@@ -18,14 +19,14 @@ function closeBanner(modalOpen) {
       <button @click="openBanner">pumpkin banner</button>
       <pumpkinBanner
         :content="'toto'"
-        @close-banner="closeBanner"
+        @close-banner="logEvent('close banner', closeBanner())"
         :show-banner="bannerState.open"
       ></pumpkinBanner>
     </Variant>
     <Variant title="custom Slot">
       <button @click="openBanner">pumpkin banner</button>
       <pumpkinBanner
-        @close-banner="closeBanner"
+        @close-banner="logEvent('close banner', closeBanner())"
         :show-banner="bannerState.open"
       >
         <template #content>
@@ -35,3 +36,9 @@ function closeBanner(modalOpen) {
     </Variant>
   </Story>
 </template>
+
+<docs lang="md">
+# Props
+showBanner
+content 
+</docs>

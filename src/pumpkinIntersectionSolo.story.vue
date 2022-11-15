@@ -73,3 +73,12 @@ const list = [
   height: 200px;
 }
 </style>
+
+<docs lang="md">
+# Props
+threshold
+animationDelay
+uniqueKey
+parent
+transitionName
+</docs>

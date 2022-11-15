@@ -56,4 +56,8 @@ function searchHashtag(searchText) {
   </Story>
 </template>
 
-<style scoped></style>
+<docs lang="md">
+# Props
+givenTags
+customTag
+</docs>

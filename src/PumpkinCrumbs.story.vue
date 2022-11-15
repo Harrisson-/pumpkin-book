@@ -56,3 +56,11 @@ const longCrumbs = [
     </Variant>
   </Story>
 </template>
+
+<docs lang="md">
+# Props
+crumbs
+shrink
+shrink_number
+color
+</docs>

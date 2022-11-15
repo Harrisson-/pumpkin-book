@@ -46,3 +46,12 @@ main {
   border: 1px solid black;
 }
 </style>
+
+<docs lang="md">
+# Props
+threshold
+headersId 
+autoBuild
+autoBuildLevel
+autoBuildDOMId
+</docs>

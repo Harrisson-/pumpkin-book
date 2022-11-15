@@ -29,3 +29,15 @@ function closeModal(modalOpen) {
     </Variant>
   </Story>
 </template>
+
+<docs lang="md">
+# Props
+showModal
+overlay
+contentBody
+contentTitle
+teleport
+
+# Events
+closeModal
+</docs>
