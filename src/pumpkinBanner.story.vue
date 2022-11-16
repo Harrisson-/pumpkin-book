@@ -39,6 +39,14 @@ function closeBanner(modalOpen) {
 
 <docs lang="md">
 # Props
-showBanner
-content 
+* showBanner
+    * type: __Boolean__
+    * default: false
+    * :white_check_mark: required 
+* content
+    * type: __String__
+    * :x: not required
+
+# Events
+close-banner
 </docs>

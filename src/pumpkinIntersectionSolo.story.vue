@@ -76,9 +76,27 @@ const list = [
 
 <docs lang="md">
 # Props
-threshold
-animationDelay
-uniqueKey
-parent
-transitionName
+* threshold
+    * type: __Number__
+    * default: 1.0
+    * :x: not required 
+    * must be between 0.0 and 1.0 | can be an array
+* animationDelay
+    * type: __Number__
+    * default: 0
+    * :x: not required 
+    * Delay before animation trigger
+* uniqueKey
+    * type: __Number__    
+    * :white_check_mark: required 
+    * use to create a unique scope for each intersectionSolo component
+* parent
+    * type: __String__
+    * default: null
+    * :x: not required 
+    * if don't provide, it will use window viewport as parent
+* transitionName
+    * type: __String__
+    * :x: not required 
+    * can be "slide-left", "display-left", "flip-left" or "brighten"
 </docs>

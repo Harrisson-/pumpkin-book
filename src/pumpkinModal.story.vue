@@ -32,11 +32,25 @@ function closeModal(modalOpen) {
 
 <docs lang="md">
 # Props
-showModal
-overlay
-contentBody
-contentTitle
-teleport
+* showModal
+    * type: __Boolean__
+    * default: false
+    * :white_check_mark: required
+* overlay
+    * type: __Boolean__
+    * default: true
+    * :x: not required
+* contentBody
+    * type: __String__
+    * :x: not required
+* contentTitle
+    * type: __String__
+    * :x: not required
+* teleport
+    * type: __Boolean__
+    * default: false
+    * :x: not required
+    * Teleport modal to <body> tag inside DOM
 
 # Events
 closeModal

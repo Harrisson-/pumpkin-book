@@ -58,6 +58,11 @@ function searchHashtag(searchText) {
 
 <docs lang="md">
 # Props
-givenTags
-customTag
+* givenTags
+    * type: __Array__
+    * default: []
+    * :white_check_mark: required
+* customTag
+    * type: __string__
+    * default: '#'
 </docs>

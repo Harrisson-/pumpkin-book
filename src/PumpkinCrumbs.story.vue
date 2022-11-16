@@ -59,8 +59,19 @@ const longCrumbs = [
 
 <docs lang="md">
 # Props
-crumbs
-shrink
-shrink_number
-color
+* crumbs
+    * type: __Array__
+    * :x: not required 
+* shrink
+    * type: __Boolean__
+    * default: false
+    * :x: not required 
+* shrink_number
+    * type: __Number__
+    * default: 2
+    * :x: not required 
+* color
+    * type: __String__
+    * default: orange
+    * :x: not required 
 </docs>

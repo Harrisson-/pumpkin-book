@@ -49,9 +49,21 @@ main {
 
 <docs lang="md">
 # Props
-threshold
-headersId 
-autoBuild
-autoBuildLevel
-autoBuildDOMId
+* threshold
+    * type: __number__
+    * default: 0.5
+    * :x: not required
+* headersId
+    * type: __Array__
+    * :x: not required
+* autoBuild
+    * type: __Boolean__
+    * default: false
+    * :x: not required
+* autoBuildLevel
+    * type: __Number__
+    * default: 0
+    * :x: not required
+* autoBuildDOMId
+    * type: __String___
 </docs>
