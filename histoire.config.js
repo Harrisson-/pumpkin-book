@@ -19,7 +19,6 @@ export default defineConfig({
     },
     colors: {
       primary: defaultColors.orange,
-      gray: defaultColors.green,
     },
     logoHref: '#',
   },
