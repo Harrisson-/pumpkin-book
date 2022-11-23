@@ -2,6 +2,15 @@
 import { pumpkinSummary } from "pumpkin-vue";
 
 const sections = ["section1", "title1", "section2", "title2", "block1"];
+
+const autoBuildSections = [
+  { section: "section1", title: "title1" },
+  {
+    section: "section2",
+    title: "title2",
+    block: "block1",
+  },
+];
 </script>
 
 <template>
@@ -52,14 +61,48 @@ const sections = ["section1", "title1", "section2", "title2", "block1"];
         <div class="right-block"></div>
       </main>
     </Variant>
-		
-    <!-- <Variant title="auto build">
+
+    <Variant title="auto build">
       <main>
         <div class="left-block">
-          <pumpkinSummary :headers="sections"></pumpkinSummary>
+          <pumpkinSummary
+            :autoBuild="true"
+            :autoBuildLevel="3"
+            autoBuildDOMId="summary-parent-auto"
+          ></pumpkinSummary>
+        </div>
+        <div class="summary-parent" id="summary-parent-auto">
+          <div
+            v-for="section in autoBuildSections"
+            :key="section"
+            class="summary-section"
+            v-bind:id="section.section"
+          >
+            <h1>{{ section.section }}</h1>
+            <div v-bind:id="section.title">
+              <p>
+                Donec et lectus sapien. Etiam varius aliquam interdum. Duis quam nisl,
+                sodales sed nunc eu, vestibulum laoreet ex.
+              </p>
+              <h2>{{ section.title }}</h2>
+              <div v-if="section.block" v-bind:id="section.block">
+                <p>
+                  Nam ac pulvinar augue. Donec tincidunt commodo dolor sed imperdiet.
+                  Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                  inceptos himenaeos. Integer quis maximus risus, sit amet luctus neque.
+                  Aenean porta dolor eget ultricies tristique.
+                </p>
+                <h3>{{ section.block }}</h3>
+                <p>
+                  Integer quis maximus risus, sit amet luctus neque. Aenean porta dolor
+                  eget ultricies tristique.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
-    </Variant> -->
+    </Variant>
   </Story>
 </template>
 
