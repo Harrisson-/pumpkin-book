@@ -5,6 +5,7 @@ export default defineConfig({
   plugins: [
     HstVue(),
   ],
+  viteNodeInlineDeps: [/pumpkin-vue/],
   tree: {
     file: 'title',
     order: 'asc',
