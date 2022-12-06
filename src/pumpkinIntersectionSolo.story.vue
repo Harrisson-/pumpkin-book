@@ -38,7 +38,7 @@ const list = [
 </script>
 
 <template>
-  <Story title="intersetion solo">
+  <Story title="intersetion solo" auto-props-disabled>
     <Variant title="Standard">
       <div class="solo-wrapper">
         <intersectionSolo

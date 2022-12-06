@@ -45,7 +45,7 @@ const longCrumbs = [
 </script>
 
 <template>
-  <Story title="breadCrumb">
+  <Story title="breadCrumb" auto-props-disabled>
     <Variant title="Long list">
       <pumpkinCrumb :crumbs="longCrumbs" :shrink="true">
       </pumpkinCrumb>

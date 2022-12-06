@@ -14,7 +14,7 @@ const autoBuildSections = [
 </script>
 
 <template>
-  <Story title="Summary">
+  <Story title="Summary" auto-props-disabled>
     <Variant title="standard">
       <main>
         <div class="left-block">

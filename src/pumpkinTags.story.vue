@@ -49,12 +49,19 @@ function searchHashtag(searchText) {
 </script>
 
 <template>
-  <Story title="Tags">
+  <Story title="Tags" auto-props-disabled>
     <Variant title="Standard">
-      <pumpkinTags :given-tags="filteredTags.value" @search-word="searchHashtag" />
+      <pumpkinTags :given-tags="filteredTags.value" @search-word="searchHashtag" id="test-container"/>
     </Variant>
   </Story>
 </template>
+
+<style>
+
+#test-container {
+  position: absolute;
+}
+</style>
 
 <docs lang="md">
 # Props

@@ -14,7 +14,7 @@ function closeBanner(modalOpen) {
 </script>
 
 <template>
-  <Story title="banner">
+  <Story title="banner" auto-props-disabled>
     <Variant title="Standard">
       <button @click="openBanner">pumpkin banner</button>
       <pumpkinBanner
