@@ -6,7 +6,7 @@
   "scripts": {
     "story:dev": "histoire dev",
     "story:build": "histoire build",
-    "story:preview": "histoire preview"
+    "story:preview": "histoire preview --port 8080"
   },
   "dependencies": {
     "pumpkin-vue": "^0.3.0",
