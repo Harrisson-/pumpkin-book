@@ -4,15 +4,15 @@ import { pumpkinCrumb } from 'pumpkin-vue';
 const crumbs = [
   {
     name: "home",
-    link: "https://www.inrap.fr/",
+    link: "#",
   },
   {
     name: "actualité",
-    link: "https://www.inrap.fr/actualites/recherche",
+    link: "#",
   },
   {
     name: "fouilles",
-    link: "https://www.inrap.fr/chroniques-de-site/recherche",
+    link: "#",
   },
 ];
 
